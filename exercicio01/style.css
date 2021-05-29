@@ -1,0 +1,56 @@
+body{
+    background-color: #f2f4f5;
+    margin: 0;
+}
+
+header{
+    width: 100%; /*aqui está falando que quer que ocupe 100% da linha e não ficar pela metade como ficou o meu antes*/
+    height: 60px;
+    background-color: #9013fe;
+    display: block;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+main{
+    width: 1000px;
+    height: 800px;
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 30px; /*um espaço na parte de cima por fora do main por isso que é margin*/
+    margin-left: auto;
+    /*coloca nos dois auto, pois um emburra o outro empurra então por isso que fica centralizado*/
+    /*para funcionar o margin tem que ter um tamanho de largura, pois senão o margin não consegue fazer o cálculo para deixar centralizado*/
+    margin-right: auto;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.box-container{
+    width: 300px;
+    margin-left: 25px;
+    margin-top: 25px;
+    display: table; /* aqui ele gera o tamanho de acordo com a quantidade de elementos*/
+    float: left; /* significa flutua para a esquerda e aqui também resolve o problema com o margim somando os dois.*/
+}
+
+.box{
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: rgb(51, 91, 107);      
+    border-radius: 10px;
+    border: 4px solid #9013fe;
+    box-sizing: border-box; /* quando coloca os dois valores da borda e da caixa ele ultrapassa os valores então com o border-box ele soma os valores para dentro fazendo que fique no total do width */
+
+}
+
+.btn{
+    width: 300px;
+    height: 45px;
+    background-color: #9013fe;
+    border-radius: 4px;
+    display: block;
+    margin-top: 25px;
+    float: left;
+}
+
