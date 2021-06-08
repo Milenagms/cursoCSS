@@ -1,16 +1,32 @@
 @keyframes myBoxAnim{
-    from {
+    0% { /*from*/
         background-color: blue;
         width: 200px;
         height: 200px;
+        border-radius: 0;
     }
-    to{
+    30% {  /*to*/
         background-color: red;
         width: 400px;
         height: 100px;
+        transform: translate(500px, 300px);
+        border-radius: 0;
+    }
+    70% {  /*to*/
+        background-color: rgb(255, 251, 0);
+        width: 100px;
+        height: 100px;
+        transform: translate(0, 0) rotate(0deg);
+        border-radius: 50%;
+    }
+    100% {  /*to*/
+        background-color: rgb(9, 255, 0);
+        width: 400px;
+        height: 100px;
+        transform: translate(800px, 600px) rotate(360deg);
+        border-radius: 0;
     }
 }
-
 *{
     margin: 0;
     padding: 0;
