@@ -1,0 +1,60 @@
+@keyframes btnAnim{
+    0%{
+        width: 200px;
+        height: 64px;
+        display: block;
+        border-radius: 4px;
+        border: 2px solid blue;
+        margin: 100px auto;
+        background-color: #fff;
+        color:rgb(255, 0, 136);
+        box-shadow: 8px 8px 0 rgb(255, 0, 136);
+        
+    }
+    50%{
+        width: 150px;
+        height: 64px;
+        display: block;
+        border-radius: 8px;
+        border: 2px solid blue;
+        margin: 100px auto;
+        background-color: #fff;
+        color:rgb(255, 0, 136);
+        box-shadow: 0 0 0 rgb(255, 0, 136);
+        
+    }
+    100%{
+        width: 200px;
+        height: 64px;
+        display: block;
+        border-radius: 4px;
+        border: 2px solid blue;
+        margin: 100px auto;
+        background-color: blue;
+        color:rgb(207, 207, 207);
+        box-shadow: 0 0 0 rgb(255, 0, 136);
+        
+
+    }
+}
+
+.btn{
+    width: 200px;
+    height: 64px;
+    display: block;
+    border-radius: 4px;
+    border: 2px solid blue;
+    margin: 100px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 64px;
+    text-decoration: none;
+    color:rgb(255, 0, 136);
+    background-color: #fff;
+    box-shadow: 8px 8px 0 rgb(255, 0, 136);
+    transition: all 0.6s ease-out;
+}
+
+.btn:hover{
+    animation: btnAnim 0.6s forwards;
+}
